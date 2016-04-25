@@ -3889,3 +3889,18 @@ input, a, button {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear; }
+
+.quote {
+  font-size: 32px;
+  font-style: italic;
+  font-family: Oswald, "Roboto", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+  @media screen and (max-width: 39.9375em) {
+    .quote {
+      font-size: 20px; } }
+
+.quote-from {
+  font-size: 20px;
+  font-family: Oswald, "Roboto", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+  @media screen and (max-width: 39.9375em) {
+    .quote-from {
+      font-size: 16px; } }

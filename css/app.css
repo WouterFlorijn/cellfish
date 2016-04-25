@@ -3686,13 +3686,13 @@ input, a, button {
   line-height: 16px; }
 
 .cover-top-logo {
-  height: 16px;
+  height: 32px;
   vertical-align: bottom;
   margin-right: 16px; }
 
 .cover-top-name {
   font-size: 16px;
-  line-height: 16px;
+  line-height: 32px;
   margin: 0;
   color: #1abc9c; }
 

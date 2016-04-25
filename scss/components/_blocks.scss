@@ -1,0 +1,15 @@
+.block {
+	@extend .padding-top-large;
+	@extend .padding-bottom-large;
+}
+
+@each $name, $color in $palette {
+	.block-#{$name} {
+		background-color: $color;
+		color: foreground($color);
+
+		& * {
+			color: foreground($color);
+		}
+	}
+}

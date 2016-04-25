@@ -1,0 +1,24 @@
+.pos-absolute {
+	position: absolute;
+}
+
+.center-v {
+	@extend .pos-absolute;
+
+	top: 50%;
+	transform: translateY(-50%);
+}
+.center-h {
+	@extend .pos-absolute;
+
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.center {
+	@extend .pos-absolute;
+
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

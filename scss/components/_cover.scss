@@ -1,0 +1,80 @@
+.cover {
+	@extend .view-height;
+
+	position: relative;
+	display: block;
+	width: 100%;
+	min-height: 640px;
+
+	background-image: image('cover.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.cover-top {
+	@extend .padding-small;
+
+	line-height: space(small);
+}
+.cover-top-logo {
+	height: space(small);
+	vertical-align: bottom;
+	margin-right: space(small);
+}
+.cover-top-name {
+	font-size: space(small);
+	line-height: space(small);
+	margin: 0;
+	color: $primary-color;
+}
+
+.cover-content {
+	@extend .center-v;
+
+	display: block;
+	width: 100%;
+}
+.cover-section {
+	max-width: 640px;
+	margin: auto;
+}
+.cover-video {
+	margin-bottom: space(medium);
+
+	@include breakpoint(large up) {
+		margin-bottom: 0;
+	}
+}
+.cover-info {
+	text-align: center;
+	@include breakpoint(large up) {
+		text-align: left;
+	}
+}
+.cover-text {
+	margin-bottom: 0;
+	font-size: 1.5rem;
+
+	@include breakpoint(medium only) {
+		font-size: 1.25rem;
+	}
+	@include breakpoint(small only) {
+		font-size: 1rem;
+	}
+}
+
+.cover-arrow {
+	@extend .center-h;
+	@extend .padding-small;
+
+	bottom: 0;
+
+	background-color: $white;
+	border-top-left-radius: $global-radius;
+	border-top-right-radius: $global-radius;
+	cursor: pointer;
+}
+.cover-arrow-image {
+	width: space(medium);
+}

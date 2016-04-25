@@ -1,0 +1,51 @@
+$sides: (top, bottom, left, right);
+
+// Standard spacing classes for padding and margin.
+@each $name, $size in $space {
+	@each $side in $sides {
+		.padding-#{$side}-#{$name} {
+			padding-#{$side}: $size;
+		}
+		.margin-#{$side}-#{$name} {
+			margin-#{$side}: $size;
+		}
+	}
+
+	.padding-#{$name} {
+		padding: $size;
+	}
+	.margin-#{$name} {
+		margin: $size;
+	}
+
+	.spacing-#{$name} {
+		display: inline-block;
+		margin-right: $size;
+		margin-bottom: $size;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+// No padding or margin.
+@each $side in $sides {
+	.no-padding-#{$side} {
+		padding-#{$side}: 0 !important;
+	}
+	.no-margin-#{$side} {
+		margin-#{$side}: 0 !important;
+	}
+}
+.no-padding {
+	padding: 0 !important;
+}
+.no-margin {
+	margin: 0 !important;
+}
+
+// Size classes.
+.view-height {
+	height: 100vh;
+}

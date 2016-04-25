@@ -1,0 +1,12 @@
+@each $name, $color in $palette {
+	.color-#{$name} {
+		color: $color;
+	}
+	.bg-#{$name} {
+		background-color: $color;
+	}
+}
+// Bugfix.
+.bg-white {
+	background-color: $white;
+}

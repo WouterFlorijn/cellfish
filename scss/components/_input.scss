@@ -1,0 +1,95 @@
+input, a, button {
+	outline: none;
+	box-shadow: none;
+	border: none;
+}
+
+.large-input {
+	@extend .radius;
+
+	display: block;
+	width: 100%;
+	padding: 0 space(small);
+	// margin-bottom: space(medium);
+
+	font-size: 1.75rem;
+	line-height: space(large);
+	font-family: $header-font-family;
+	text-transform: uppercase;
+
+	transition: all $transition-time $transition-function;
+
+	@include breakpoint(small only) {
+		font-size: 1.25rem;
+		line-height: 48px;
+	}
+	@include breakpoint(medium down) {
+		max-width: 640px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.large-input-text {
+	@extend .large-input;
+
+	background-color: $medium-gray;
+	color: $white;
+
+	&:focus {
+		background-color: $dark-gray;
+	}
+	@include breakpoint(medium down) {
+		text-align: center;
+	}
+}
+
+.large-button {
+	@extend .large-input;
+
+	background-color: $alert-color;
+	color: $white;
+
+	&:hover, &:focus {
+		background-color: $warning-color;
+	}
+}
+
+.first-input {
+	@include breakpoint(medium down) {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		margin-bottom: 2px;
+	}
+	@include breakpoint(large up) {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		margin-right: 2px;
+		width: calc(100% - 2px);
+	}
+}
+.middle-input {
+	border-radius: 0;
+	@include breakpoint(medium down) {
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+	@include breakpoint(large up) {
+		margin-left: 2px;
+		margin-right: 2px;
+		width: calc(100% - 4px);
+	}
+}
+.last-input {
+	@include breakpoint(medium down) {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		margin-top: 2px;
+	}
+	@include breakpoint(large up) {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		margin-left: 2px;
+		width: calc(100% - 2px);
+	}
+}

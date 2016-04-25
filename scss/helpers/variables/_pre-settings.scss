@@ -1,0 +1,28 @@
+$space: (
+	tiny: 8px,
+	small: 16px,
+	medium: 32px,
+	large: 64px,
+	huge: 128px
+	);
+
+@function space($size) {
+	@return map-get($space, $size);
+}
+
+// Colors.
+$facebook-color: #3F51B5;//#3B5998;
+$youtube-color:  #F44336;//#CD201F;
+$linkedin-color: #2196F3;//#0077B5;
+$twitter-color:  #00BCD4;//#55ACEE;
+
+$darken-factor:  -15%;
+$lighten-factor: -15%;
+
+// Math.
+$pi: 3.14159265359;
+
+// Transitions.
+$transition-time: 0.5s;
+$transition-function: ease-out;
+$transition-function-pop: cubic-bezier(0.5, 2, 0.5, 1);

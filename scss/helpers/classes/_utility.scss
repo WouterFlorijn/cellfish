@@ -1,0 +1,13 @@
+@for $i from 1 through 12 {
+	.xlarge-#{$i}  { @media #{$xlarge-up}  { width: 100% * $i / 12; } }
+	.xxlarge-#{$i} { @media #{$xxlarge-up} { width: 100% * $i / 12; } }
+}
+
+.hidden {
+	display: none;
+}
+
+.one-line {
+	overflow: hidden;
+	white-space: nowrap;
+}

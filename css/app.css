@@ -3672,6 +3672,9 @@ input, a, button {
     .text-center-responsive {
       text-align: left; } }
 
+.text-large {
+  font-size: 1.5rem; }
+
 .cover {
   position: relative;
   display: block;

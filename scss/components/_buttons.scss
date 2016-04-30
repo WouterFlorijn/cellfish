@@ -1,0 +1,43 @@
+.social-button {
+	@extend .round;
+
+	position: relative;
+	display: inline-block;
+	width: space(medium);
+	height: space(medium);
+	margin-left: space(tiny);
+	margin-right: space(tiny);
+
+	line-height: space(medium);
+	text-align: center;
+	font-size: 1.25rem;
+
+	background-color: $light-gray;
+	color: $dark-gray;
+
+	transition: all $transition-time $transition-function;
+
+	& i {
+		color: $dark-gray;
+		transition: all $transition-time $transition-function;
+	}
+	&:hover {
+		$color: $white;
+		& i {
+			color: $white;
+		}
+	}
+	&.facebook:hover {
+		background-color: $facebook-color;
+	}
+	&.twitter:hover {
+		background-color: $twitter-color;
+	}
+
+	&:first-child {
+		margin-left: 0;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+}

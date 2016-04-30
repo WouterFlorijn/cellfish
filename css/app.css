@@ -3465,7 +3465,7 @@ table.hover tr:nth-of-type(even):hover {
 .radius, .large-input, .large-input-text, .large-button {
   border-radius: 8px; }
 
-.round {
+.round, .social-button {
   border-radius: 100%; }
 
 .level-1 {
@@ -3674,6 +3674,33 @@ input, a, button {
 
 .text-large {
   font-size: 1.5rem; }
+
+.social-button {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
+  margin-right: 8px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 1.25rem;
+  background-color: #d6dbdf;
+  color: #212f3c;
+  transition: all 0.5s ease-out; }
+  .social-button i {
+    color: #212f3c;
+    transition: all 0.5s ease-out; }
+  .social-button:hover i {
+    color: #FFFFFF; }
+  .social-button.facebook:hover {
+    background-color: #3F51B5; }
+  .social-button.twitter:hover {
+    background-color: #00BCD4; }
+  .social-button:first-child {
+    margin-left: 0; }
+  .social-button:last-child {
+    margin-right: 0; }
 
 .cover {
   position: relative;
